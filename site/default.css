@@ -29,6 +29,11 @@ p {
 strong {
 }
 
+hr {
+	display: none;
+}
+
+
 a {
 	color: #171717;
 }
@@ -36,51 +41,6 @@ a {
 a:hover {
 	text-decoration: none;
 }
-
-a img {
-	border: none;
-}
-
-	.image
-	{
-		display: inline-block;
-	}
-	
-		.image img
-		{
-			display: block;
-			width: 100%;
-		}
-
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-	
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-
-		.image-centered img
-		{
-			margin: 0 auto;
-			width: auto;
-		}
-
-hr {
-	display: none;
-}
-
 
 /*********************************************************************************/
 /* List Styles                                                                   */
@@ -244,36 +204,100 @@ hr {
 		text-align: center;
 	}
 
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
 
-	#logo 
-	{
-		width: 500px;
-		height: 100px;
-		margin: 0 auto;
-		padding: 2em 0em;
-		text-transform: uppercase;
-	}
+/** MENU */
+
+#menu-wrapper
+{
+	background: #787878;
+}
+
+#menu {
+	height: 60px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	position:relative;
+	display: inline-block;
+}
+
+#menu a {
+	display: inline-block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 60px;
+	border: none;
+	color: #FFF;
+	background: #787878;
+}
+
+#menu li ul {
+	position:absolute;
+	left:0px;
+	display:none;
 	
-	#logo h1
-	{
-		letter-spacing: 0.10em;
-		font-size: 3em;
-	}
-	
-	#logo p 
-	{
-		letter-spacing: 0.10em;
-		color: #FFF;
-	}
-	
-	#logo a 
-	{
-		text-decoration: none;
-		color: #FFF;
-	}
+}
+
+#menu li:hover ul {
+	display:inline-block;
+}
+
+#menu li ul a{
+	display: block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 40px;
+	border: none;
+	color: #FFF;
+	white-space: nowrap
+}
+
+/**
+#menu {
+	overflow: hidden;
+	height: 100px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+}
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 100px;
+	border: none;
+	color: #FFF;
+}
+*/
+
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -291,51 +315,6 @@ hr {
 	{
 	}
 	
-
-/** MENU */
-
-#menu-wrapper
-{
-	background: #787878;
-}
-
-#menu {
-	overflow: hidden;
-	height: 100px;
-}
-
-#menu ul {
-	margin: 0;
-	padding: 0px 0px 0px 0px;
-	list-style: none;
-	line-height: normal;
-	text-align: center;
-}
-
-#menu li {
-	display: inline-block;
-}
-
-#menu a {
-	display: block;
-	letter-spacing: 1px;
-	padding: 0px 40px;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 0.80em;
-	line-height: 100px;
-	border: none;
-	color: #FFF;
-}
-
-#menu a:hover, #menu .current_page_item a {
-	text-decoration: none;
-}
-
-#menu .current_page_item a {
-	background: #787878;
-}
 
 /** PAGE */
 
