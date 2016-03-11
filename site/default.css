@@ -115,7 +115,7 @@ a:hover {
 /** WRAPPER */
 
 #wrapper {
-	background: #FFFFFF url(images/bg01.png) repeat;
+	background: #FFF;
 }
 
 #footer-wrapper
@@ -258,27 +258,6 @@ a:hover {
 }
 
 /*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-	#sidebar
-	{
-		float: right;
-		width: 345px;
-	}
-	
-	#sidebar .title h2
-	{
-		font-size: 1.6em;
-	}
-	
-	#sidebar .box1
-	{
-		margin-bottom: 3em;
-	}
-
-
-/*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
 
@@ -287,6 +266,7 @@ a:hover {
 		overflow: hidden;
 		padding: 0em 0em;
 		text-align: center;
+		background: #787878;
 	}
 	
 	#copyright p
@@ -402,20 +382,49 @@ a:hover {
 		padding-left: 40px;
 	}
 
+/** Team */
 
 
 
 
+#member {
+	overflow: hidden;
+	display: block;
+	background: #FFF;	
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	list-style: none;
+	line-height: normal;
+}
 
+#team-sidebar {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
 
+#team-info {	
+	float: right;
+	width: 65%;
+	padding-top: 50px;
+}
+#team-contact {
+	float: right;
+	width: 65%;
+}
 
+#team-contact ul {
+	margin: 0;
+	padding: 10px 0px 10px 20px;
+	list-style: none;
+	text-align: left;
+}
 
-
-
-
-
-
-
-
-
-	
+#team-contact ul li {
+	padding-right: 20px;
+	display: inline-block;
+}
